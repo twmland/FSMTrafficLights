@@ -11,6 +11,7 @@ namespace FSMTrafficLights
     {
         public TrafficLight(BaseTrafficLight nextLight, Color colorLightOn, int durationSeconds) : base(nextLight, colorLightOn, durationSeconds)
         {
+            this.Visible = true;
         }
         
     }

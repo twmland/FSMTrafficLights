@@ -23,7 +23,11 @@ namespace FSMTrafficLights
         /// <summary>亮燈的時間(秒)</summary>
         protected int DurationSeconds { get; set; }
         private int Count = 0;
-
+        public void SetNextOnLight(BaseTrafficLight nextOnLight)
+        {
+            NextOnLight = nextOnLight;
+        }
+        
         /// <summary>Turn On</summary>
         public override void TurnOn()
         {
@@ -96,5 +100,9 @@ namespace FSMTrafficLights
         {
 
         }
+        public virtual void Initial()
+        {
+            this.TurnOff();
+        } 
     }
 }

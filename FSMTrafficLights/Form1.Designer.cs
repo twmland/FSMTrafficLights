@@ -28,19 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelGreenLightH = new System.Windows.Forms.Panel();
+            this.panelYellowLightH = new System.Windows.Forms.Panel();
+            this.panelRedLightH = new System.Windows.Forms.Panel();
+            this.panelGreenLightV = new System.Windows.Forms.Panel();
+            this.panelYellowLightV = new System.Windows.Forms.Panel();
+            this.panelRedLightV = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // timer1
+            // panelGreenLightH
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.panelGreenLightH.Location = new System.Drawing.Point(0, 0);
+            this.panelGreenLightH.Name = "panelGreenLightH";
+            this.panelGreenLightH.Size = new System.Drawing.Size(29, 39);
+            this.panelGreenLightH.TabIndex = 0;
+            // 
+            // panelYellowLightH
+            // 
+            this.panelYellowLightH.Location = new System.Drawing.Point(37, 0);
+            this.panelYellowLightH.Name = "panelYellowLightH";
+            this.panelYellowLightH.Size = new System.Drawing.Size(29, 39);
+            this.panelYellowLightH.TabIndex = 1;
+            // 
+            // panelRedLightH
+            // 
+            this.panelRedLightH.Location = new System.Drawing.Point(75, 0);
+            this.panelRedLightH.Name = "panelRedLightH";
+            this.panelRedLightH.Size = new System.Drawing.Size(29, 39);
+            this.panelRedLightH.TabIndex = 2;
+            // 
+            // panelGreenLightV
+            // 
+            this.panelGreenLightV.Location = new System.Drawing.Point(213, 56);
+            this.panelGreenLightV.Name = "panelGreenLightV";
+            this.panelGreenLightV.Size = new System.Drawing.Size(39, 29);
+            this.panelGreenLightV.TabIndex = 3;
+            // 
+            // panelYellowLightV
+            // 
+            this.panelYellowLightV.Location = new System.Drawing.Point(213, 90);
+            this.panelYellowLightV.Name = "panelYellowLightV";
+            this.panelYellowLightV.Size = new System.Drawing.Size(39, 29);
+            this.panelYellowLightV.TabIndex = 4;
+            // 
+            // panelRedLightV
+            // 
+            this.panelRedLightV.Location = new System.Drawing.Point(213, 125);
+            this.panelRedLightV.Name = "panelRedLightV";
+            this.panelRedLightV.Size = new System.Drawing.Size(39, 29);
+            this.panelRedLightV.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panelRedLightV);
+            this.Controls.Add(this.panelYellowLightV);
+            this.Controls.Add(this.panelGreenLightV);
+            this.Controls.Add(this.panelRedLightH);
+            this.Controls.Add(this.panelYellowLightH);
+            this.Controls.Add(this.panelGreenLightH);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -49,8 +97,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panelGreenLightH;
+        private System.Windows.Forms.Panel panelYellowLightH;
+        private System.Windows.Forms.Panel panelRedLightH;
+        private System.Windows.Forms.Panel panelGreenLightV;
+        private System.Windows.Forms.Panel panelYellowLightV;
+        private System.Windows.Forms.Panel panelRedLightV;
     }
 }
 
